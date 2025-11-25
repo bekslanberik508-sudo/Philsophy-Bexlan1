@@ -57,12 +57,12 @@
         }
     </style>
 
-    <script>
-        function openDocFor(id, path) {
-            const viewerURL = "https://docs.google.com/gview?embedded=true&url=" + encodeURIComponent(path);
-            document.getElementById(id).src = viewerURL;
-        }
-    </script>
+  <script>
+    function openDocFor(id, path) {
+        // Убираем Google Viewer, ставим прямую ссылку
+        document.getElementById(id).src = path;
+    }
+</script>
 
 </head>
 <body>
